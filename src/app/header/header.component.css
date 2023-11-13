@@ -1,0 +1,17 @@
+header {
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 25px 9%;
+    background: #D7D7D7;
+    padding: 0;
+}
+header img {
+    transform: scale(0.8);
+}
+
+.cabeza {
+    z-index: 1;
+}

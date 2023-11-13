@@ -1,0 +1,19 @@
+<section id="contenedor">
+    <div id="pokeballs">
+        <div id="pokeballs">
+            <div *ngFor="let pokemon of pokemons; let i = index" id="pokeball">
+              <img (click)="abrirPokeball(i)" [hidden]="mostrarCartas[i]" id="pokeballImg" src="..\assets\pokeball.png" alt="">
+              <div [hidden]="!mostrarCartas[i]" id="carta{{i + 1}}">
+                <div class="centrar">
+                    <h2>{{ pokemon.nombre }}</h2>
+                    <img id="pokemonImg" [src]="pokemon.imagen" alt="{{ pokemon.nombre }}">
+                    <p>Categoría: {{ pokemon.categoria }}</p>
+                    <p>Tipo: <a class="tipo">{{ pokemon.tipo }}</a></p>
+                    <p>Habilidad: {{ pokemon.habilidad }}</p>
+                    <button (click)="abrirPokeball(i)" id="botonCerrar">Cerrar Pokeball</button>
+                </div>           
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
