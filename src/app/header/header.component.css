@@ -5,8 +5,9 @@ header {
     align-content: center;
     justify-content: center;
     padding: 25px 9%;
-    background: #D7D7D7;
     padding: 0;
+    background: rgb(215,215,215);
+    background: radial-gradient(circle, rgba(215,215,215,1) 0%, rgba(255,255,255,1) 100%);
 }
 header img {
     transform: scale(0.8);
